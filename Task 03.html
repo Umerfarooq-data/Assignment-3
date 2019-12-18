@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript &amp; jQuery - Chapter 7: Introducing jQuery - Event Object</title>
+    <link rel="stylesheet" href="css/c07.css" />
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="page">
+      <h1 id="header">List</h1>
+      <h2>Buy groceries</h2>
+      <ul>
+        <li id="one" value="available" class="hot"><em>fresh</em> figs</li>
+        <li id="two" value="important" class="hot">pine nuts</li>
+        <li id="three" value="important" class="hot">honey</li>
+        <li id="four" value="available">balsamic vinegar</li>
+        <li id="two" value="important" class="hot">pine nuts</li>
+        <li id="three" value="important" class="hot">honey</li>
+        <li id="four" value="available">balsamic vinegar</li>
+          <li id="two" value="important" class="hot">pine nuts</li>
+        <li id="three" value="important" class="hot">honey</li>
+        <li id="four" value="available">balsamic vinegar</li>
+          <li id="two" value="important" class="hot">pine nuts</li>
+        <li id="three" value="important" class="hot">honey</li>
+        <li id="four" value="available">balsamic vinegar</li>
+          <li id="two" value="important" class="hot">pine nuts</li>
+        <li id="three" value="important" class="hot">honey</li>
+        <li id="four" value="available">balsamic vinegar</li>
+          <li id="two" value="important" class="hot">pine nuts</li>
+        <li id="three" value="important" class="hot">honey</li>
+        <li id="four" value="available">balsamic vinegar</li>
+          <li id="two" value="important" class="hot">pine nuts</li>
+        <li id="three" value="important" class="hot">honey</li>
+        <li id="four" value="available">balsamic vinegar</li>
+          <li id="two" value="important" class="hot">pine nuts</li>
+        <li id="three" value="important" class="hot">honey</li>
+        <li id="four" value="available">balsamic vinegar</li>
+          <li id="two" value="important" class="hot">pine nuts</li>
+        <li id="three" value="important" class="hot">honey</li>
+        <li id="four" value="available">balsamic vinegar</li>
+   		<div class="footer"><h2>List King</h2></div>
+
+      </ul>
+      
+   		<div id="slideAd" >&copy Buy ListKing Pro</div>
+    </div>
+    <script >
+ 
+    	$(document).scroll(function() {
+
+  		if( $(window).scrollTop()>1000){
+  			$("#slideAd").show("slow");
+  		}
+  		else{
+  			$("#slideAd").hide("slow");
+  		}
+  		});
+    	
+
+    </script>
+  </body>
+</html>
